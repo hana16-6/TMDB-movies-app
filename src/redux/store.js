@@ -1,14 +1,8 @@
-import { createStore, applyMiddleware } from "redux";
-import { createLogger } from 'redux-logger';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from "redux-thunk";
-import rootReducer from "./rootReducer";
-const logger = createLogger();
-
-
-
-
-export const store = createStore(
-    rootReducer, composeWithDevTools(applyMiddleware(thunk))
-
-)
+import { configureStore } from '@reduxjs/toolkit';
+import moviesReducer from "./movies/moviesSlice";
+export const store = configureStore({
+    reducer: {
+        moviesReducer
+    },
+    devTools: process.env.toString() !== 'production',
+})

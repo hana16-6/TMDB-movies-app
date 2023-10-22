@@ -1,0 +1,23 @@
+@import "./variables";
+
+.movie_card_content {
+  .movie_card {
+    @extend %tras_time;
+    &:hover {
+      .card_title {
+        @extend %tras_time;
+      }
+      .card_img {
+        opacity: 0.5;
+        @extend %tras_time;
+      }
+
+      transform: scale(1.1);
+      @extend %tras_time;
+    }
+    .card_title {
+      @extend %tras_time;
+      color: $text_color;
+    }
+  }
+}

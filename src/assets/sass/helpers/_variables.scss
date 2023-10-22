@@ -1,0 +1,12 @@
+@use "sass:color";
+%tras_time {
+  transition: all 0.3s ease-in-out;
+}
+
+$primary: #81ecec;
+$text_color: #868686;
+$text_white: #fff;
+$aurora: #16b8ba;
+$danger: red;
+$btn-aurora: #16b8ba;
+$dark-main-color: color.adjust($aurora, $lightness: -18%);

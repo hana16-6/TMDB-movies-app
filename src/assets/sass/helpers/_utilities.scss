@@ -1,0 +1,80 @@
+a {
+  color: $aurora;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: $dark-main-color;
+  }
+}
+.nice-shadow {
+  box-shadow: 0 3px 15px rgba(22, 41, 124, 0.1);
+}
+
+.text-aurora {
+  color: $aurora;
+}
+.btn-aurora {
+  background-color: $btn-aurora;
+}
+
+.dropdown {
+  .dropdown-item {
+    &.active,
+    &:active {
+      background-color: $aurora;
+    }
+
+    &.danger-item:hover,
+    &.danger-item:focus {
+      color: $danger;
+      background-color: rgba($danger, 0.1);
+    }
+
+    &.primary-item:hover,
+    &.primary-item:focus {
+      color: $primary;
+      background-color: rgba($primary, 0.1);
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    -webkit-animation-name: DropDownSlide;
+    animation-name: DropDownSlide;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .dropdown-divider {
+    height: 0;
+    opacity: 1;
+    border-top: 1px solid #eff2f7;
+  }
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+nav.navbar .nav-item .nav-link:hover,
+nav.navbar .nav-item .nav-link.active {
+  color: $aurora;
+  background-color: rgba($aurora, 0.1);
+}
+nav.navbar .utilities-dropdown a.dropdown-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: rgba($aurora, 0.1);
+}
+.accordion-button {
+  &:focus {
+    border-color: $aurora;
+    box-shadow: 0 0 0 0.25rem rgb(22, 184, 186, 0.4);
+  }
+}
